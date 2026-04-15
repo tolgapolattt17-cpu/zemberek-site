@@ -120,7 +120,7 @@
         </div>
 
         <div class="logo">
-            <h1><span>CHRONO</span>VAULT</h1>
+            <h1><span>ZEM</span>BEREK</h1>
         </div>
 
         <h1 class="title">Privacy Policy</h1>
@@ -130,11 +130,12 @@
             <h2>1. Data Collection</h2>
             <p>Zemberek collects the following data to manage your watch collection:</p>
             <ul>
-                <li>Watch information (brand, model, price, etc.)</li>
-                <li>Watch photos (stored locally on your device)</li>
-                <li>Apple ID for optional CloudKit synchronization</li>
+                <li>Watch information (brand, model, price, purchase date, etc.)</li>
+                <li>Watch photos</li>
+                <li>Daily wear records</li>
+                <li>User identifier and email (if shared) obtained via Sign in with Apple</li>
             </ul>
-            <p>All collected data is stored locally on your device and is not shared with third parties.</p>
+            <p>Data is stored locally on your device (SwiftData) and encrypted on our secure cloud server (Supabase).</p>
         </div>
 
         <div class="section">
@@ -142,20 +143,33 @@
             <p>Your data is only used for the following purposes:</p>
             <ul>
                 <li>Viewing and managing your watch collection</li>
-                <li>Tracking your watch values</li>
-                <li>Optional synchronization between your devices</li>
+                <li>Tracking watch values and daily wear habits</li>
+                <li>Cloud sync across your devices linked to your account</li>
+                <li>Crash reports and basic anonymous usage statistics (Firebase Crashlytics & Analytics)</li>
             </ul>
-            <p>Your data is not used for advertising, analytics, or third-party services.</p>
+            <p>Your data is not used for advertising and is never shared with third-party ad networks.</p>
         </div>
 
         <div class="section">
-            <h2>3. iCloud and CloudKit</h2>
-            <p>Zemberek uses Apple's CloudKit service for iCloud synchronization.</p>
+            <h2>3. Cloud Synchronization (Supabase)</h2>
+            <p>Zemberek stores your data on <strong>Supabase</strong> infrastructure linked to your account, allowing you to access the same collection across multiple devices.</p>
             <ul>
-                <li>Synchronization is completely optional</li>
-                <li>Your data is subject to Apple's privacy policy</li>
-                <li>Photos are synchronized via CloudKit</li>
-                <li>You can disable synchronization at any time</li>
+                <li>Data is transmitted over HTTPS (encrypted)</li>
+                <li>Stored on disk-encrypted Supabase servers</li>
+                <li>Each user can only access their own data (Row Level Security)</li>
+                <li>Photos are stored in a private Supabase Storage bucket</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>3a. Third-Party Services</h2>
+            <p>The app uses the following services:</p>
+            <ul>
+                <li><strong>Sign in with Apple</strong> — authentication</li>
+                <li><strong>Supabase</strong> — data and photo storage</li>
+                <li><strong>Firebase Crashlytics</strong> — crash reports (anonymous technical logs)</li>
+                <li><strong>Firebase Analytics</strong> — anonymous usage statistics</li>
+                <li><strong>Claude AI (Anthropic)</strong> — when optional watch image recognition is used, the image is processed temporarily and not retained</li>
             </ul>
         </div>
 
@@ -172,20 +186,21 @@
         <div class="section">
             <h2>5. Data Security</h2>
             <ul>
-                <li>All data is stored encrypted on your device</li>
-                <li>CloudKit synchronization is end-to-end encrypted</li>
-                <li>No data is transferred to third-party servers</li>
+                <li>All data transmission is encrypted via HTTPS/TLS</li>
+                <li>The Supabase server is disk-encrypted</li>
+                <li>Row Level Security ensures only you can access your data</li>
                 <li>Secure authentication with Sign in with Apple</li>
+                <li>We do not store passwords — authentication is managed by Apple</li>
             </ul>
         </div>
 
         <div class="section">
             <h2>6. Your Rights</h2>
             <ul>
-                <li>You can delete your data at any time</li>
-                <li>You can close your account and clear all data</li>
-                <li>You can enable or disable CloudKit synchronization</li>
-                <li>You can manage permissions from iOS settings</li>
+                <li>You can delete your data at any time from within the app</li>
+                <li>Settings → "Delete Account" permanently removes your account and all data</li>
+                <li>You can manage notification and photo permissions from iOS Settings</li>
+                <li>For data requests, contact destek@zemberek.app</li>
             </ul>
         </div>
 

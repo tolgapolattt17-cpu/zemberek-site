@@ -120,7 +120,7 @@
         </div>
 
         <div class="logo">
-            <h1><span>CHRONO</span>VAULT</h1>
+            <h1><span>ZEM</span>BEREK</h1>
         </div>
 
         <h1 class="title">Gizlilik Politikası</h1>
@@ -130,11 +130,12 @@
             <h2>1. Toplanan Veriler</h2>
             <p>Zemberek, saat koleksiyonunuzu yönetmek için aşağıdaki verileri toplar:</p>
             <ul>
-                <li>Saat bilgileri (marka, model, fiyat vb.)</li>
-                <li>Saat fotoğrafları (cihazınızda yerel olarak saklanır)</li>
-                <li>İsteğe bağlı CloudKit senkronizasyonu için Apple ID</li>
+                <li>Saat bilgileri (marka, model, fiyat, satın alma tarihi vb.)</li>
+                <li>Saat fotoğrafları</li>
+                <li>Günlük saat takma kayıtları</li>
+                <li>Sign in with Apple üzerinden alınan kullanıcı kimliği ve (paylaştıysanız) e-posta adresi</li>
             </ul>
-            <p>Toplanan tüm veriler cihazınızda yerel olarak saklanır ve üçüncü taraflarla paylaşılmaz.</p>
+            <p>Veriler cihazınızda yerel olarak (SwiftData) ve güvenli bulut sunucumuzda (Supabase) şifreli olarak saklanır.</p>
         </div>
 
         <div class="section">
@@ -142,20 +143,33 @@
             <p>Verileriniz yalnızca şu amaçlarla kullanılır:</p>
             <ul>
                 <li>Saat koleksiyonunuzu görüntüleme ve yönetme</li>
-                <li>Saat değerlerinizi takip etme</li>
-                <li>İsteğe bağlı olarak cihazlarınız arasında senkronizasyon</li>
+                <li>Saat değerlerinizi ve günlük takma alışkanlıklarınızı takip etme</li>
+                <li>Cihazlarınız arasında hesabınıza bağlı senkronizasyon</li>
+                <li>Çökme raporları ve temel kullanım istatistikleri (anonim — Firebase Crashlytics & Analytics)</li>
             </ul>
-            <p>Verileriniz reklam, analitik veya üçüncü taraf servisler için kullanılmaz.</p>
+            <p>Verileriniz reklam amaçlı kullanılmaz, üçüncü taraf reklam ağlarıyla paylaşılmaz.</p>
         </div>
 
         <div class="section">
-            <h2>3. iCloud ve CloudKit</h2>
-            <p>Zemberek, iCloud senkronizasyonu için Apple'ın CloudKit servisini kullanır.</p>
+            <h2>3. Bulut Senkronizasyonu (Supabase)</h2>
+            <p>Zemberek, verilerinizi hesabınıza bağlı olarak <strong>Supabase</strong> altyapısında saklar. Böylece birden fazla cihazınızda aynı koleksiyona erişebilirsiniz.</p>
             <ul>
-                <li>Senkronizasyon tamamen isteğe bağlıdır</li>
-                <li>Verileriniz Apple'ın gizlilik politikasına tabidir</li>
-                <li>Fotoğraflar CloudKit ile senkronize edilir</li>
-                <li>İstediğiniz zaman senkronizasyonu kapatabilirsiniz</li>
+                <li>Veriler HTTPS üzerinden şifreli iletilir</li>
+                <li>Supabase sunucularında disk şifrelemesi ile saklanır</li>
+                <li>Her kullanıcı yalnızca kendi verisine erişebilir (Row Level Security)</li>
+                <li>Fotoğraflar Supabase Storage'da özel bir alanda tutulur</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>3a. Üçüncü Taraf Servisler</h2>
+            <p>Uygulama aşağıdaki hizmetleri kullanır:</p>
+            <ul>
+                <li><strong>Sign in with Apple</strong> — kimlik doğrulama</li>
+                <li><strong>Supabase</strong> — veri ve fotoğraf depolama</li>
+                <li><strong>Firebase Crashlytics</strong> — çökme raporları (anonim teknik loglar)</li>
+                <li><strong>Firebase Analytics</strong> — anonim kullanım istatistikleri</li>
+                <li><strong>Claude AI (Anthropic)</strong> — opsiyonel saat görsel tanıma özelliği kullanıldığında görsel geçici olarak işlenir, saklanmaz</li>
             </ul>
         </div>
 
@@ -172,20 +186,21 @@
         <div class="section">
             <h2>5. Veri Güvenliği</h2>
             <ul>
-                <li>Tüm veriler cihazınızda şifreli olarak saklanır</li>
-                <li>CloudKit senkronizasyonu end-to-end şifrelidir</li>
-                <li>Üçüncü taraf sunuculara veri aktarımı yapılmaz</li>
+                <li>Tüm veri iletişimi HTTPS/TLS ile şifrelenir</li>
+                <li>Supabase sunucusu disk seviyesinde şifrelidir</li>
+                <li>Row Level Security ile yalnızca siz kendi verinize erişebilirsiniz</li>
                 <li>Sign in with Apple ile güvenli kimlik doğrulama</li>
+                <li>Şifre saklamayız — kimlik doğrulama Apple tarafından yönetilir</li>
             </ul>
         </div>
 
         <div class="section">
             <h2>6. Haklarınız</h2>
             <ul>
-                <li>Verilerinizi istediğiniz zaman silebilirsiniz</li>
-                <li>Hesabınızı kapatabilir ve tüm verileri temizleyebilirsiniz</li>
-                <li>CloudKit senkronizasyonunu açıp kapatabilirsiniz</li>
-                <li>İzinleri iOS ayarlarından yönetebilirsiniz</li>
+                <li>Verilerinizi istediğiniz zaman uygulama içinden silebilirsiniz</li>
+                <li>Ayarlar → "Hesabı Sil" ile hesabınızı ve tüm verilerinizi kalıcı olarak silebilirsiniz</li>
+                <li>Bildirim ve fotoğraf izinlerini iOS Ayarlar'dan yönetebilirsiniz</li>
+                <li>Veri talebiniz için destek@zemberek.app adresine yazabilirsiniz</li>
             </ul>
         </div>
 
