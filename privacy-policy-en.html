@@ -1,219 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zemberek - Privacy Policy</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            background-color: #0D0D0D;
-            color: #FFFFFF;
-            line-height: 1.6;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .logo {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .logo h1 {
-            font-size: 28px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            color: #D4AF37;
-        }
-
-        .logo span {
-            color: #FFFFFF;
-        }
-
-        h1.title {
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 10px;
-            color: #FFFFFF;
-        }
-
-        .last-updated {
-            font-size: 14px;
-            color: #888888;
-            margin-bottom: 40px;
-        }
-
-        .section {
-            margin-bottom: 32px;
-        }
-
-        .section h2 {
-            font-size: 20px;
-            font-weight: 600;
-            color: #D4AF37;
-            margin-bottom: 16px;
-        }
-
-        .section p, .section ul {
-            font-size: 16px;
-            color: #CCCCCC;
-            margin-bottom: 12px;
-        }
-
-        .section ul {
-            padding-left: 20px;
-        }
-
-        .section li {
-            margin-bottom: 8px;
-        }
-
-        .contact-email {
-            color: #D4AF37;
-            text-decoration: none;
-        }
-
-        .contact-email:hover {
-            text-decoration: underline;
-        }
-
-        .footer {
-            margin-top: 60px;
-            padding-top: 20px;
-            border-top: 1px solid #333333;
-            text-align: center;
-            font-size: 14px;
-            color: #666666;
-        }
-
-        .lang-switch {
-            text-align: right;
-            margin-bottom: 20px;
-        }
-
-        .lang-switch a {
-            color: #D4AF37;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        .lang-switch a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="lang-switch">
-            <a href="privacy-policy.html">Türkçe</a>
-        </div>
-
-        <div class="logo">
-            <h1><span>ZEM</span>BEREK</h1>
-        </div>
-
-        <h1 class="title">Privacy Policy</h1>
-        <p class="last-updated">Last Updated: April 2026</p>
-
-        <div class="section">
-            <h2>1. Data Collection</h2>
-            <p>Zemberek collects the following data to manage your watch collection:</p>
-            <ul>
-                <li>Watch information (brand, model, price, purchase date, etc.)</li>
-                <li>Watch photos</li>
-                <li>Daily wear records</li>
-                <li>User identifier and email (if shared) obtained via Sign in with Apple</li>
-            </ul>
-            <p>Data is stored locally on your device (SwiftData) and encrypted on our secure cloud server (Supabase).</p>
-        </div>
-
-        <div class="section">
-            <h2>2. Data Usage</h2>
-            <p>Your data is only used for the following purposes:</p>
-            <ul>
-                <li>Viewing and managing your watch collection</li>
-                <li>Tracking watch values and daily wear habits</li>
-                <li>Cloud sync across your devices linked to your account</li>
-                <li>Crash reports and basic anonymous usage statistics (Firebase Crashlytics & Analytics)</li>
-            </ul>
-            <p>Your data is not used for advertising and is never shared with third-party ad networks.</p>
-        </div>
-
-        <div class="section">
-            <h2>3. Cloud Synchronization (Supabase)</h2>
-            <p>Zemberek stores your data on <strong>Supabase</strong> infrastructure linked to your account, allowing you to access the same collection across multiple devices.</p>
-            <ul>
-                <li>Data is transmitted over HTTPS (encrypted)</li>
-                <li>Stored on disk-encrypted Supabase servers</li>
-                <li>Server location: AWS Frankfurt (eu-central-1), Germany — hosted within the European Union</li>
-                <li>Each user can only access their own data (Row Level Security)</li>
-                <li>Photos are stored in a private Supabase Storage bucket</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>3a. Third-Party Services</h2>
-            <p>The app uses the following services:</p>
-            <ul>
-                <li><strong>Sign in with Apple</strong> — authentication</li>
-                <li><strong>Supabase</strong> — data and photo storage</li>
-                <li><strong>Firebase Crashlytics</strong> — crash reports (anonymous technical logs)</li>
-                <li><strong>Firebase Analytics</strong> — anonymous usage statistics</li>
-                <li><strong>Claude AI (Anthropic)</strong> — when optional watch image recognition is used, the image is processed temporarily and not retained</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>4. Camera and Gallery Access</h2>
-            <p>The app requests the following permissions to add watch photos:</p>
-            <ul>
-                <li>Camera: To take new watch photos</li>
-                <li>Photo Gallery: To select existing photos</li>
-            </ul>
-            <p>These permissions are optional. If you deny camera or photo access, you will not be able to add photos or use the AI watch scanner; collection management and other core features will continue to work.</p>
-        </div>
-
-        <div class="section">
-            <h2>5. Data Security</h2>
-            <ul>
-                <li>All data transmission is encrypted via HTTPS/TLS</li>
-                <li>The Supabase server is disk-encrypted</li>
-                <li>Row Level Security ensures only you can access your data</li>
-                <li>Secure authentication with Sign in with Apple</li>
-                <li>We do not store passwords — authentication is managed by Apple</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>6. Your Rights</h2>
-            <ul>
-                <li>You can delete your data at any time from within the app</li>
-                <li>Settings → "Delete Account" permanently removes your account and all data</li>
-                <li>You can manage notification and photo permissions from iOS Settings</li>
-                <li>For data requests, contact destek@zemberek.app</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>7. Contact</h2>
-            <p>For questions about our privacy policy:</p>
-            <p>Email: <a href="mailto:destek@zemberek.app" class="contact-email">destek@zemberek.app</a></p>
-        </div>
-
-        <div class="footer">
-            <p>&copy; 2026 Zemberek. All rights reserved.</p>
-        </div>
-    </div>
-</body>
-</html>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zemberek - Privacy Policy</title><style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; background-color: #0D0D0D; color: #FFFFFF; line-height: 1.6; padding: 20px; }
+.container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+.logo { text-align: center; margin-bottom: 24px; }
+.logo h1 { font-size: 28px; font-weight: 700; letter-spacing: 2px; color: #D4AF37; }
+.logo span { color: #FFFFFF; }
+.nav { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-bottom: 36px; font-size: 14px; }
+.nav a { color: #D4AF37; text-decoration: none; }
+.nav a.cur { color: #FFFFFF; border-bottom: 1px solid #D4AF37; }
+h1.title { font-size: 32px; font-weight: 700; margin-bottom: 10px; color: #FFFFFF; }
+.last-updated { font-size: 14px; color: #888888; margin-bottom: 40px; }
+.section { margin-bottom: 32px; }
+.section h2 { font-size: 20px; font-weight: 600; color: #D4AF37; margin-bottom: 16px; }
+.section p, .section ul { font-size: 16px; color: #CCCCCC; margin-bottom: 12px; }
+.section ul { padding-left: 20px; }
+.section li { margin-bottom: 8px; }
+.contact-email { color: #D4AF37; text-decoration: none; }
+.contact-email:hover { text-decoration: underline; }
+.footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #333333; text-align: center; font-size: 14px; color: #666666; }
+.lang-switch { text-align: right; margin-bottom: 20px; }
+.lang-switch a { color: #D4AF37; text-decoration: none; font-size: 14px; }
+.lang-switch a:hover { text-decoration: underline; }
+</style></head>
+<body><div class="container">
+<div class="lang-switch"><a href="privacy-policy.html">Türkçe</a></div>
+<div class="logo"><h1><span>ZEM</span>BEREK</h1></div>
+<div class="nav"><a href="privacy-policy-en.html" class=cur>Privacy</a> <a href="terms-of-service-en.html">Terms</a> <a href="community-rules-en.html">Community Rules</a> <a href="kvkk-notice-en.html">KVKK Notice</a></div>
+<h1 class="title">Privacy Policy</h1>
+<p class="last-updated">Last Updated: October 6, 2026</p>
+<div class="section"><h2>1. Who We Are</h2>
+<p>Zemberek ("Zemberek", "we") is a collection-management, watch-recognition / market-value research and invitation-only community app for watch collectors. This policy explains which personal data is processed while you use the app, why, who it is shared with, and your rights.</p>
+<p>Data controller: the developer of the Zemberek app. Contact: <a class="contact-email" href="mailto:destek@zemberek.app">destek@zemberek.app</a></p></div>
+<div class="section"><h2>2. Data We Collect</h2>
+<p>Account</p>
+<ul><li>Sign in with Apple: the unique user identifier Apple provides, your name and email address (or Apple's private relay address if you choose "Hide My Email"). We do not store passwords.</li></ul>
+<p>Your collection</p>
+<ul><li>Watch details (brand, model, reference, price, notes, dates), watch photos, documents (warranty, invoice, etc.), "Today" wear records and wrist photos, value history. This data is stored on your device and on cloud servers linked to your account.</li></ul>
+<p>Scanning and search</p>
+<ul><li>Scan counter and scan history (recognised brand/model), the search queries you type.</li></ul>
+<p>Community (if you are a member or have applied)</p>
+<ul><li>Profile: username, display name, country, short bio, profile photo.</li><li>Posts: photo, caption, brand/model and optional value; comments, likes, follows and saves, members you block, reports you file, notifications.</li></ul>
+<p>Membership application (only if you applied)</p>
+<ul><li>The brand, model and serial number of the watch you apply with; four verification photos taken with the camera (watch/box/certificate/handwritten note together, certificate, wrist, box); optional short introduction, Instagram and referral; your explicit-consent record (date and text version).</li></ul>
+<p>Purchases</p>
+<ul><li>Your Premium subscription status. Your payment details (card, etc.) are processed by Apple and never reach us. The subscription is validated by verifying Apple's signed receipt on our server.</li></ul>
+<p>Technical data</p>
+<ul><li>App version, device model and iOS version, last seen and login count; whether an internet connection was available.</li><li>Error logs: error code and message, time, your account identifier (e.g. an AI or search service failing, no internet, a search with no results).</li><li>Crash reports and anonymous usage statistics (Firebase).</li></ul>
+<p>We do not collect: advertising identifier (IDFA), precise location, contacts, microphone. We do not track you for advertising.</p></div>
+<div class="section"><h2>3. How We Use Data</h2>
+<ul><li>To create your account, provide your collection and sync it across devices (performance of the contract).</li><li>To perform watch recognition and market-value research; to apply your usage entitlement and fair-use limits.</li><li>To operate the community: review membership applications, display posts, handle reports and abuse (legitimate interest; explicit consent for application photos).</li><li>To verify and provide your Premium subscription.</li><li>To detect errors, keep the app stable and secure, and prevent fraud (legitimate interest).</li><li>To comply with legal obligations.</li></ul>
+<p>We do not sell your data or use it for advertising.</p></div>
+<div class="section"><h2>4. Service Providers and Third Parties</h2>
+<p>We use the following providers to run the app. Each receives only the data needed for the relevant operation:</p>
+<ul><li>Apple: Sign in with Apple and subscription (StoreKit) validation.</li><li>Supabase: authentication, database, file storage and server functions (our cloud infrastructure). Servers are on AWS Frankfurt (eu-central-1), Germany — hosted within the European Union.</li><li>Anthropic (Claude): when you use watch scanning, the photo you take is sent to Anthropic's AI service to identify the watch; we do not store it for that purpose.</li><li>SerpAPI: for text search and market-value research, your search text (e.g. brand/model) is sent to this service.</li><li>Exchange-rate service: called to get rates; contains no personal data.</li><li>Google Firebase: crash reports and anonymous usage statistics.</li></ul>
+<p>Your data is hosted in Germany (EU); some providers (e.g. AI, search and analytics/crash services) may be located outside Türkiye and the EU, e.g. in the US. Your data may therefore be transferred abroad; we make such transfers with the safeguards required by KVKK and applicable law and send these services only the data needed for the operation. Your collection and photos are not sent to AI / search services for permanent storage.</p>
+<p>We do not share your data with other third parties unless legally required (e.g. a court order).</p></div>
+<div class="section"><h2>5. Community: What Others Can See</h2>
+<ul><li>Approved members can see your username, display name, country, bio, profile photo and posts.</li><li>A post always shows the watch's brand and model; you can hide the value.</li><li>Your email address, Apple identifier, serial number, application photos and error records are never shown to other members.</li><li>Only the authorised reviewer sees your application photos and serial number (via time-limited links, in private storage).</li><li>You can report content that breaks the Community Rules and block members. Reports are reviewed by us; content may be removed and accounts suspended.</li></ul></div>
+<div class="section"><h2>6. Retention</h2>
+<ul><li>Account and collection data: until you delete your account.</li><li>Membership application photos and serial-number text: permanently deleted 30 days after approval, 14 days after rejection or withdrawal (photos are deleted immediately on withdrawal), and at most 60 days if undecided. To prevent fake/duplicate applications we keep an irreversible hash of the serial number, the decision and its date.</li><li>Error logs: at most 12 months for diagnostics; your records are deleted when you delete your account.</li><li>Community content: until you delete it or your account is deleted.</li><li>Data subject to a legal retention obligation is kept for that period.</li></ul></div>
+<div class="section"><h2>7. Security</h2>
+<ul><li>Data is encrypted in transit (TLS) and at rest (disk-level encryption); per-user access rules (Row Level Security) are enforced in the database.</li><li>Sensitive files such as application photos are kept in private, non-public storage and viewed only by the authorised reviewer through short-lived links.</li><li>The app offers an optional Face ID / Touch ID lock.</li></ul>
+<p>No system is absolutely secure; in case of a breach we notify as required by applicable law.</p></div>
+<div class="section"><h2>8. Children</h2>
+<p>Community features are for ages 18 and over. We do not knowingly collect personal data from children under 13. If you believe we have, write to <a class="contact-email" href="mailto:destek@zemberek.app">destek@zemberek.app</a> and we will delete it.</p></div>
+<div class="section"><h2>9. Your Rights</h2>
+<p>Under Article 11 of Turkish Law No. 6698 (KVKK) (and GDPR where applicable) you have the right to:</p>
+<ul><li>learn whether your data is processed and request information,</li><li>request correction or deletion,</li><li>object to processing and withdraw your explicit consent,</li><li>learn the third parties your data is transferred to,</li><li>lodge a complaint with the supervisory authority.</li></ul>
+<p>Write to <a class="contact-email" href="mailto:destek@zemberek.app">destek@zemberek.app</a>; after verifying your identity we reply within 30 days at the latest.</p></div>
+<div class="section"><h2>10. Deleting Your Account and Data</h2>
+<p>You can delete your account at any time via Settings &gt; Account &gt; Delete Account. Deletion permanently removes your collection, photos and documents, community profile and content, membership application photos, error records and login records, and cannot be undone. Your Sign in with Apple link is also removed. If you only withdraw your membership application, the photos you uploaded are deleted immediately.</p></div>
+<div class="section"><h2>11. Changes</h2>
+<p>We may update this policy. Significant changes are announced in the app; the date of the current version appears at the top of this page.</p></div>
+<div class="section"><h2>12. Contact</h2>
+<p>For any privacy or personal-data question, request or complaint: <a class="contact-email" href="mailto:destek@zemberek.app">destek@zemberek.app</a></p></div>
+<div class="footer"><p>&copy; 2026 Zemberek. All rights reserved. · <a class="contact-email" href="mailto:destek@zemberek.app">destek@zemberek.app</a></p></div>
+</div></body></html>

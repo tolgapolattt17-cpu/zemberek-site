@@ -1,231 +1,67 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zemberek - Kullanım Koşulları</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            background-color: #0D0D0D;
-            color: #FFFFFF;
-            line-height: 1.6;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .logo {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .logo h1 {
-            font-size: 28px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            color: #D4AF37;
-        }
-
-        .logo span {
-            color: #FFFFFF;
-        }
-
-        h1.title {
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 10px;
-            color: #FFFFFF;
-        }
-
-        .last-updated {
-            font-size: 14px;
-            color: #888888;
-            margin-bottom: 40px;
-        }
-
-        .section {
-            margin-bottom: 32px;
-        }
-
-        .section h2 {
-            font-size: 20px;
-            font-weight: 600;
-            color: #D4AF37;
-            margin-bottom: 16px;
-        }
-
-        .section p, .section ul {
-            font-size: 16px;
-            color: #CCCCCC;
-            margin-bottom: 12px;
-        }
-
-        .section ul {
-            padding-left: 20px;
-        }
-
-        .section li {
-            margin-bottom: 8px;
-        }
-
-        .section h3 {
-            font-size: 16px;
-            font-weight: 600;
-            color: #FFFFFF;
-            margin: 16px 0 8px 0;
-        }
-
-        .contact-email {
-            color: #D4AF37;
-            text-decoration: none;
-        }
-
-        .contact-email:hover {
-            text-decoration: underline;
-        }
-
-        .footer {
-            margin-top: 60px;
-            padding-top: 20px;
-            border-top: 1px solid #333333;
-            text-align: center;
-            font-size: 14px;
-            color: #666666;
-        }
-
-        .lang-switch {
-            text-align: right;
-            margin-bottom: 20px;
-        }
-
-        .lang-switch a {
-            color: #D4AF37;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        .lang-switch a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="lang-switch">
-            <a href="terms-of-service-en.html">English</a>
-        </div>
-
-        <div class="logo">
-            <h1><span>ZEM</span>BEREK</h1>
-        </div>
-
-        <h1 class="title">Kullanım Koşulları</h1>
-        <p class="last-updated">Son Güncelleme: Nisan 2026</p>
-
-        <div class="section">
-            <h2>1. Koşulların Kabulü</h2>
-            <p>Zemberek uygulamasını kullanarak, bu kullanım koşullarını kabul etmiş sayılırsınız. Bu koşulları kabul etmiyorsanız, lütfen uygulamayı kullanmayın.</p>
-        </div>
-
-        <div class="section">
-            <h2>2. Lisans</h2>
-            <p>Zemberek size kişisel, ticari olmayan, devredilemez bir kullanım lisansı verir.</p>
-
-            <h3>İzin verilen kullanımlar:</h3>
-            <ul>
-                <li>Kişisel saat koleksiyonunuzu yönetme</li>
-                <li>Saat değerlerinizi takip etme</li>
-                <li>Fotoğraf ve belge ekleme</li>
-            </ul>
-
-            <h3>İzin verilmeyen kullanımlar:</h3>
-            <ul>
-                <li>Uygulamayı tersine mühendislik yapmak</li>
-                <li>Uygulamayı kopyalamak veya dağıtmak</li>
-                <li>Uygulamayı ticari amaçlarla kullanmak</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>3. Kullanıcı Sorumlulukları</h2>
-            <p>Kullanıcı olarak şunlardan siz sorumlusunuz:</p>
-            <ul>
-                <li>Girdiğiniz bilgilerin doğruluğu</li>
-                <li>Hesap güvenliği</li>
-                <li>Yedekleme (bulut senkronizasyonu otomatik yapılır)</li>
-                <li>Yasalara uygun kullanım</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>4. Sorumluluk Reddi</h2>
-            <p>Zemberek "olduğu gibi" sunulmaktadır.</p>
-            <ul>
-                <li>Saat değer tahminleri bilgilendirme amaçlıdır</li>
-                <li>Gerçek piyasa değerleri farklılık gösterebilir</li>
-                <li>Yatırım tavsiyesi niteliği taşımaz</li>
-                <li>Veri kaybından sorumlu değiliz (yedekleme önerilir)</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>5. Kullanıcı İçeriği</h2>
-            <p>Uygulamaya eklediğiniz içerikler (fotoğraflar, notlar) size aittir.</p>
-            <ul>
-                <li>İçeriklerinizi üçüncü taraflarla paylaşmayız</li>
-                <li>İçerikleriniz cihazınızda ve hesabınıza bağlı Supabase sunucusunda saklanır</li>
-                <li>Supabase sunucuları disk seviyesinde şifrelidir</li>
-                <li>İstediğiniz zaman içeriklerinizi silebilirsiniz</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>6. Koşullarda Değişiklikler</h2>
-            <p>Bu koşulları zaman zaman güncelleyebiliriz.</p>
-            <ul>
-                <li>Önemli değişiklikler uygulama içinde duyurulur</li>
-                <li>Güncelleme tarihini kontrol edin</li>
-                <li>Devam eden kullanım yeni koşulları kabul anlamına gelir</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>7. Hesap Sonlandırma</h2>
-            <p>Hesabınızı istediğiniz zaman silebilirsiniz.</p>
-            <ul>
-                <li>Ayarlar > Hesap > Hesabı Sil</li>
-                <li>Cihazınızdaki tüm verileriniz silinir</li>
-                <li>Supabase'deki hesap bilgileriniz, saatleriniz, fotoğraflarınız kalıcı olarak silinir</li>
-                <li>Bu işlem geri alınamaz</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>8. Geçerli Hukuk</h2>
-            <p>Bu koşullar Türkiye Cumhuriyeti yasalarına tabidir.</p>
-            <p>Uyuşmazlıklar Türkiye mahkemelerinde çözülür.</p>
-        </div>
-
-        <div class="section">
-            <h2>9. İletişim</h2>
-            <p>Kullanım koşulları hakkında sorularınız için:</p>
-            <p>E-posta: <a href="mailto:destek@zemberek.app" class="contact-email">destek@zemberek.app</a></p>
-        </div>
-
-        <div class="footer">
-            <p>&copy; 2026 Zemberek. Tüm hakları saklıdır.</p>
-        </div>
-    </div>
-</body>
-</html>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zemberek - Kullanım Koşulları</title><style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; background-color: #0D0D0D; color: #FFFFFF; line-height: 1.6; padding: 20px; }
+.container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+.logo { text-align: center; margin-bottom: 24px; }
+.logo h1 { font-size: 28px; font-weight: 700; letter-spacing: 2px; color: #D4AF37; }
+.logo span { color: #FFFFFF; }
+.nav { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-bottom: 36px; font-size: 14px; }
+.nav a { color: #D4AF37; text-decoration: none; }
+.nav a.cur { color: #FFFFFF; border-bottom: 1px solid #D4AF37; }
+h1.title { font-size: 32px; font-weight: 700; margin-bottom: 10px; color: #FFFFFF; }
+.last-updated { font-size: 14px; color: #888888; margin-bottom: 40px; }
+.section { margin-bottom: 32px; }
+.section h2 { font-size: 20px; font-weight: 600; color: #D4AF37; margin-bottom: 16px; }
+.section p, .section ul { font-size: 16px; color: #CCCCCC; margin-bottom: 12px; }
+.section ul { padding-left: 20px; }
+.section li { margin-bottom: 8px; }
+.contact-email { color: #D4AF37; text-decoration: none; }
+.contact-email:hover { text-decoration: underline; }
+.footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #333333; text-align: center; font-size: 14px; color: #666666; }
+.lang-switch { text-align: right; margin-bottom: 20px; }
+.lang-switch a { color: #D4AF37; text-decoration: none; font-size: 14px; }
+.lang-switch a:hover { text-decoration: underline; }
+</style></head>
+<body><div class="container">
+<div class="lang-switch"><a href="terms-of-service-en.html">English</a></div>
+<div class="logo"><h1><span>ZEM</span>BEREK</h1></div>
+<div class="nav"><a href="privacy-policy.html">Gizlilik</a> <a href="terms-of-service.html" class=cur>Koşullar</a> <a href="community-rules.html">Topluluk Kuralları</a> <a href="kvkk-aydinlatma.html">KVKK</a></div>
+<h1 class="title">Kullanım Koşulları</h1>
+<p class="last-updated">Son Güncelleme: 6 Ekim 2026</p>
+<div class="section"><h2>1. Koşulların Kabulü</h2>
+<p>Zemberek'i kullanarak bu Kullanım Koşulları'nı, Gizlilik Politikası'nı ve Topluluk Kuralları'nı kabul etmiş olursunuz. Kabul etmiyorsanız uygulamayı kullanmayın. Topluluk özelliklerine girerken bu koşulları ayrıca onaylamanız istenir.</p></div>
+<div class="section"><h2>2. Hizmetin Tanımı</h2>
+<p>Zemberek; saat koleksiyonunuzu yönetmenizi, saatleri fotoğraf veya metinle tanıyıp piyasa değeri araştırmanızı ve (onaylı üyeler için) saat paylaşımı yapabileceğiniz bir toplulukta yer almanızı sağlar. Üyeler arası mesajlaşma veya satış şu an sunulmamaktadır.</p></div>
+<div class="section"><h2>3. Hesap ve Yaş Sınırı</h2>
+<ul><li>Apple ile Giriş ile hesap oluşturulur; hesabınızın güvenliğinden siz sorumlusunuz.</li><li>Topluluk özellikleri 18 yaş ve üzeri içindir.</li><li>Her kişi bir hesap kullanabilir; hesabınızı başkasına devredemezsiniz.</li></ul></div>
+<div class="section"><h2>4. Lisans</h2>
+<p>Zemberek size kişisel, devredilemez, ticari olmayan bir kullanım lisansı verir. Uygulamayı tersine mühendislik yapmanız, kopyalamanız, dağıtmanız, otomatik araçlarla (bot, kazıma) kullanmanız veya hizmeti kötüye kullanmanız yasaktır. Apple'ın Standart Son Kullanıcı Lisans Sözleşmesi de geçerlidir.</p></div>
+<div class="section"><h2>5. Üyelik Başvurusu ve Onay</h2>
+<ul><li>Topluluğa giriş davet koduyla veya başvuruyla olur. Başvuruda saatinize ait gerçek bilgi ve fotoğraflar sunmalısınız.</li><li>Sahte, başkasına ait, internetten alınmış veya yanıltıcı kanıt sunmak yasaktır ve başvurunun reddine / hesabın kalıcı kapatılmasına yol açar.</li><li>Başvuruyu kabul etme veya reddetme yetkisi Zemberek'e aittir. Reddedilen kişi yeniden başvurabilir.</li><li>Başvuru verilerinin işlenmesi Gizlilik Politikası ve başvuru sırasında verdiğiniz açık rızaya tabidir.</li></ul></div>
+<div class="section"><h2>6. Kullanıcı İçeriği</h2>
+<ul><li>Paylaştığınız içeriklerin (fotoğraf, açıklama, yorum) sahibi sizsiniz. Bu içerikleri uygulamada diğer üyelere göstermemiz, saklamamız ve teknik olarak işlememiz için bize sınırlı, dünya çapında, ücretsiz bir kullanım izni vermiş olursunuz; bu izin içeriği sildiğinizde veya hesabınızı kapattığınızda sona erer.</li><li>Yalnızca paylaşma hakkına sahip olduğunuz içerikleri paylaşın (telif, kişilik hakları).</li><li>Topluluk Kuralları'na aykırı içerik yasaktır (ayrıntı için Topluluk Kuralları'na bakın).</li></ul></div>
+<div class="section"><h2>7. Şikayet, Engelleme ve Moderasyon</h2>
+<ul><li>Her paylaşım, yorum ve profil, uygun olmayan içerik için bildirilebilir (Şikayet Et). Üyeleri engelleyebilirsiniz; engellediğiniz üyenin içeriklerini görmezsiniz.</li><li>Şikayetleri genellikle 24 saat içinde inceleriz. Kurallara aykırı içeriği kaldırır, ihlal eden hesapları uyarır, geçici olarak askıya alır veya kalıcı olarak kapatırız.</li><li>Uygunsuz içerik ve kötüye kullanım konusunda sıfır tolerans uygularız.</li><li>Bir karara itiraz etmek veya hukuka aykırı içerik bildirmek için: <a class="contact-email" href="mailto:destek@zemberek.app">destek@zemberek.app</a></li></ul></div>
+<div class="section"><h2>8. Doğruluk, Değer Bilgisi ve Yatırım Tavsiyesi Değildir</h2>
+<p>Saat tanıma sonuçları ve piyasa değeri bilgileri üçüncü taraf kaynaklara ve yapay zekâya dayanır; hatalı veya eksik olabilir. Bu bilgiler bilgilendirme amaçlıdır, yatırım, değerleme veya alım-satım tavsiyesi değildir. Bir saatin orijinalliğini doğrulama hizmeti vermeyiz.</p></div>
+<div class="section"><h2>9. Üyeler Arası İşlemler</h2>
+<p>Zemberek, üyeler arasında alım-satım için bir pazar yeri değildir. Üyelerin kendi aralarındaki iletişim ve işlemlerden (varsa) sorumlu değiliz; bu konuda dikkatli davranmanızı öneririz.</p></div>
+<div class="section"><h2>10. Premium Abonelik</h2>
+<ul><li>Premium, ek tarama hakkı gibi avantajlar sağlayan, otomatik yenilenen bir aboneliktir. Fiyat ve dönem satın alma ekranında gösterilir.</li><li>Ödeme, onayınızla Apple Kimliği hesabınızdan alınır. Abonelik, dönem bitiminden en az 24 saat önce iptal edilmedikçe otomatik yenilenir.</li><li>Aboneliğinizi iPhone Ayarlar &gt; Apple Kimliği &gt; Abonelikler bölümünden yönetebilir ve iptal edebilirsiniz. İadeler Apple'ın politikasına tabidir.</li><li>"Sınırsız" tarama, kötüye kullanımı önlemek için günlük adil kullanım sınırına tabidir.</li></ul></div>
+<div class="section"><h2>11. Fikri Mülkiyet</h2>
+<p>Zemberek'in adı, tasarımı, yazılımı ve içeriği (kullanıcı içerikleri hariç) bize aittir ve yasalarla korunur. Marka ve model adları ilgili sahiplerine aittir.</p></div>
+<div class="section"><h2>12. Sorumluluk Sınırı</h2>
+<p>Hizmet "olduğu gibi" sunulur. Yasaların izin verdiği ölçüde; hizmetin kesintisiz veya hatasız olacağını, tanıma/değer bilgilerinin doğruluğunu veya veri kaybı olmayacağını garanti etmeyiz. Önemli verilerinizi yedeklemeniz önerilir. Sorumluluğumuz, bu koşullar kapsamında yasal olarak sınırlanabilen ölçüde sınırlıdır; kasıt ve ağır kusur ile tüketici mevzuatından doğan haklarınız saklıdır.</p></div>
+<div class="section"><h2>13. Askıya Alma ve Hesap Sonlandırma</h2>
+<p>Koşulları veya Topluluk Kuralları'nı ihlal eden hesapları uyarıyla veya uyarısız askıya alabilir ya da kapatabiliriz. Hesabınızı Ayarlar &gt; Hesap &gt; Hesabı Sil ile istediğiniz zaman silebilirsiniz; bu işlem verilerinizi kalıcı olarak siler (ayrıntı için Gizlilik Politikası).</p></div>
+<div class="section"><h2>14. Değişiklikler</h2>
+<p>Bu koşulları güncelleyebiliriz. Önemli değişiklikler uygulama içinde duyurulur; değişiklikten sonra kullanmaya devam etmeniz yeni koşulları kabul ettiğiniz anlamına gelir.</p></div>
+<div class="section"><h2>15. Geçerli Hukuk</h2>
+<p>Bu koşullar Türkiye Cumhuriyeti hukukuna tabidir; tüketici mevzuatından doğan emredici haklarınız saklıdır. Uyuşmazlıklarda, yasal olarak yetkili tüketici hakem heyetleri ve Türkiye mahkemeleri yetkilidir.</p></div>
+<div class="section"><h2>16. İletişim</h2>
+<p>Sorularınız, şikâyetleriniz ve bildirimleriniz için: <a class="contact-email" href="mailto:destek@zemberek.app">destek@zemberek.app</a></p></div>
+<div class="footer"><p>&copy; 2026 Zemberek. Tüm hakları saklıdır. · <a class="contact-email" href="mailto:destek@zemberek.app">destek@zemberek.app</a></p></div>
+</div></body></html>

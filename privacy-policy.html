@@ -1,219 +1,81 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zemberek - Gizlilik Politikası</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            background-color: #0D0D0D;
-            color: #FFFFFF;
-            line-height: 1.6;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .logo {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .logo h1 {
-            font-size: 28px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            color: #D4AF37;
-        }
-
-        .logo span {
-            color: #FFFFFF;
-        }
-
-        h1.title {
-            font-size: 32px;
-            font-weight: 700;
-            margin-bottom: 10px;
-            color: #FFFFFF;
-        }
-
-        .last-updated {
-            font-size: 14px;
-            color: #888888;
-            margin-bottom: 40px;
-        }
-
-        .section {
-            margin-bottom: 32px;
-        }
-
-        .section h2 {
-            font-size: 20px;
-            font-weight: 600;
-            color: #D4AF37;
-            margin-bottom: 16px;
-        }
-
-        .section p, .section ul {
-            font-size: 16px;
-            color: #CCCCCC;
-            margin-bottom: 12px;
-        }
-
-        .section ul {
-            padding-left: 20px;
-        }
-
-        .section li {
-            margin-bottom: 8px;
-        }
-
-        .contact-email {
-            color: #D4AF37;
-            text-decoration: none;
-        }
-
-        .contact-email:hover {
-            text-decoration: underline;
-        }
-
-        .footer {
-            margin-top: 60px;
-            padding-top: 20px;
-            border-top: 1px solid #333333;
-            text-align: center;
-            font-size: 14px;
-            color: #666666;
-        }
-
-        .lang-switch {
-            text-align: right;
-            margin-bottom: 20px;
-        }
-
-        .lang-switch a {
-            color: #D4AF37;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        .lang-switch a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="lang-switch">
-            <a href="privacy-policy-en.html">English</a>
-        </div>
-
-        <div class="logo">
-            <h1><span>ZEM</span>BEREK</h1>
-        </div>
-
-        <h1 class="title">Gizlilik Politikası</h1>
-        <p class="last-updated">Son Güncelleme: Nisan 2026</p>
-
-        <div class="section">
-            <h2>1. Toplanan Veriler</h2>
-            <p>Zemberek, saat koleksiyonunuzu yönetmek için aşağıdaki verileri toplar:</p>
-            <ul>
-                <li>Saat bilgileri (marka, model, fiyat, satın alma tarihi vb.)</li>
-                <li>Saat fotoğrafları</li>
-                <li>Günlük saat takma kayıtları</li>
-                <li>Sign in with Apple üzerinden alınan kullanıcı kimliği ve (paylaştıysanız) e-posta adresi</li>
-            </ul>
-            <p>Veriler cihazınızda yerel olarak (SwiftData) ve güvenli bulut sunucumuzda (Supabase) şifreli olarak saklanır.</p>
-        </div>
-
-        <div class="section">
-            <h2>2. Verilerin Kullanımı</h2>
-            <p>Verileriniz yalnızca şu amaçlarla kullanılır:</p>
-            <ul>
-                <li>Saat koleksiyonunuzu görüntüleme ve yönetme</li>
-                <li>Saat değerlerinizi ve günlük takma alışkanlıklarınızı takip etme</li>
-                <li>Cihazlarınız arasında hesabınıza bağlı senkronizasyon</li>
-                <li>Çökme raporları ve temel kullanım istatistikleri (anonim — Firebase Crashlytics & Analytics)</li>
-            </ul>
-            <p>Verileriniz reklam amaçlı kullanılmaz, üçüncü taraf reklam ağlarıyla paylaşılmaz.</p>
-        </div>
-
-        <div class="section">
-            <h2>3. Bulut Senkronizasyonu (Supabase)</h2>
-            <p>Zemberek, verilerinizi hesabınıza bağlı olarak <strong>Supabase</strong> altyapısında saklar. Böylece birden fazla cihazınızda aynı koleksiyona erişebilirsiniz.</p>
-            <ul>
-                <li>Veriler HTTPS üzerinden şifreli iletilir</li>
-                <li>Supabase sunucularında disk şifrelemesi ile saklanır</li>
-                <li>Sunucu konumu: AWS Frankfurt (eu-central-1), Almanya — Avrupa Birliği sınırları içinde barındırılır</li>
-                <li>Her kullanıcı yalnızca kendi verisine erişebilir (Row Level Security)</li>
-                <li>Fotoğraflar Supabase Storage'da özel bir alanda tutulur</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>3a. Üçüncü Taraf Servisler</h2>
-            <p>Uygulama aşağıdaki hizmetleri kullanır:</p>
-            <ul>
-                <li><strong>Sign in with Apple</strong> — kimlik doğrulama</li>
-                <li><strong>Supabase</strong> — veri ve fotoğraf depolama</li>
-                <li><strong>Firebase Crashlytics</strong> — çökme raporları (anonim teknik loglar)</li>
-                <li><strong>Firebase Analytics</strong> — anonim kullanım istatistikleri</li>
-                <li><strong>Claude AI (Anthropic)</strong> — opsiyonel saat görsel tanıma özelliği kullanıldığında görsel geçici olarak işlenir, saklanmaz</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>4. Kamera ve Galeri Erişimi</h2>
-            <p>Uygulama, saat fotoğrafları eklemek için aşağıdaki izinleri talep eder:</p>
-            <ul>
-                <li>Kamera: Yeni saat fotoğrafları çekmek için</li>
-                <li>Fotoğraf Galerisi: Mevcut fotoğrafları seçmek için</li>
-            </ul>
-            <p>Bu izinler isteğe bağlıdır. Kamera ve galeri izni vermezseniz fotoğraf ekleme / AI saat tarama özellikleri kullanılamaz; koleksiyon yönetimi ve diğer temel işlevler çalışmaya devam eder.</p>
-        </div>
-
-        <div class="section">
-            <h2>5. Veri Güvenliği</h2>
-            <ul>
-                <li>Tüm veri iletişimi HTTPS/TLS ile şifrelenir</li>
-                <li>Supabase sunucusu disk seviyesinde şifrelidir</li>
-                <li>Row Level Security ile yalnızca siz kendi verinize erişebilirsiniz</li>
-                <li>Sign in with Apple ile güvenli kimlik doğrulama</li>
-                <li>Şifre saklamayız — kimlik doğrulama Apple tarafından yönetilir</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>6. Haklarınız</h2>
-            <ul>
-                <li>Verilerinizi istediğiniz zaman uygulama içinden silebilirsiniz</li>
-                <li>Ayarlar → "Hesabı Sil" ile hesabınızı ve tüm verilerinizi kalıcı olarak silebilirsiniz</li>
-                <li>Bildirim ve fotoğraf izinlerini iOS Ayarlar'dan yönetebilirsiniz</li>
-                <li>Veri talebiniz için destek@zemberek.app adresine yazabilirsiniz</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>7. İletişim</h2>
-            <p>Gizlilik politikamız hakkında sorularınız için:</p>
-            <p>E-posta: <a href="mailto:destek@zemberek.app" class="contact-email">destek@zemberek.app</a></p>
-        </div>
-
-        <div class="footer">
-            <p>&copy; 2026 Zemberek. Tüm hakları saklıdır.</p>
-        </div>
-    </div>
-</body>
-</html>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zemberek - Gizlilik Politikası</title><style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; background-color: #0D0D0D; color: #FFFFFF; line-height: 1.6; padding: 20px; }
+.container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
+.logo { text-align: center; margin-bottom: 24px; }
+.logo h1 { font-size: 28px; font-weight: 700; letter-spacing: 2px; color: #D4AF37; }
+.logo span { color: #FFFFFF; }
+.nav { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-bottom: 36px; font-size: 14px; }
+.nav a { color: #D4AF37; text-decoration: none; }
+.nav a.cur { color: #FFFFFF; border-bottom: 1px solid #D4AF37; }
+h1.title { font-size: 32px; font-weight: 700; margin-bottom: 10px; color: #FFFFFF; }
+.last-updated { font-size: 14px; color: #888888; margin-bottom: 40px; }
+.section { margin-bottom: 32px; }
+.section h2 { font-size: 20px; font-weight: 600; color: #D4AF37; margin-bottom: 16px; }
+.section p, .section ul { font-size: 16px; color: #CCCCCC; margin-bottom: 12px; }
+.section ul { padding-left: 20px; }
+.section li { margin-bottom: 8px; }
+.contact-email { color: #D4AF37; text-decoration: none; }
+.contact-email:hover { text-decoration: underline; }
+.footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid #333333; text-align: center; font-size: 14px; color: #666666; }
+.lang-switch { text-align: right; margin-bottom: 20px; }
+.lang-switch a { color: #D4AF37; text-decoration: none; font-size: 14px; }
+.lang-switch a:hover { text-decoration: underline; }
+</style></head>
+<body><div class="container">
+<div class="lang-switch"><a href="privacy-policy-en.html">English</a></div>
+<div class="logo"><h1><span>ZEM</span>BEREK</h1></div>
+<div class="nav"><a href="privacy-policy.html" class=cur>Gizlilik</a> <a href="terms-of-service.html">Koşullar</a> <a href="community-rules.html">Topluluk Kuralları</a> <a href="kvkk-aydinlatma.html">KVKK</a></div>
+<h1 class="title">Gizlilik Politikası</h1>
+<p class="last-updated">Son Güncelleme: 6 Ekim 2026</p>
+<div class="section"><h2>1. Biz Kimiz</h2>
+<p>Zemberek ("Zemberek", "biz"), saat koleksiyonerleri için bir koleksiyon yönetimi, saat tanıma / piyasa değeri araştırması ve davetle girilen bir topluluk uygulamasıdır. Bu politika, uygulamayı kullanırken hangi kişisel verilerin işlendiğini, neden işlendiğini, kimlerle paylaşıldığını ve haklarınızı açıklar.</p>
+<p>Veri sorumlusu: Zemberek uygulamasının geliştiricisi. İletişim: <a class="contact-email" href="mailto:destek@zemberek.app">destek@zemberek.app</a></p></div>
+<div class="section"><h2>2. Topladığımız Veriler</h2>
+<p>Hesap</p>
+<ul><li>Apple ile Giriş: Apple'ın verdiği benzersiz kullanıcı tanımlayıcısı, ad ve e-posta adresi ("E-postamı Gizle" seçerseniz Apple'ın gizli yönlendirme adresi). Parola tutmayız.</li></ul>
+<p>Koleksiyonunuz</p>
+<ul><li>Saat bilgileri (marka, model, referans, fiyat, notlar, tarihler), saat fotoğrafları, belgeler (garanti, fatura vb.), "Bugün" takılma kayıtları ve bilek fotoğrafları, değer geçmişi. Bu veriler cihazınızda ve hesabınızla ilişkili bulut sunucularımızda saklanır.</li></ul>
+<p>Tarama ve arama</p>
+<ul><li>Tarama sayacı ve tarama geçmişi (tanınan marka/model), yazdığınız arama sorguları.</li></ul>
+<p>Topluluk (üye olduysanız veya başvurduysanız)</p>
+<ul><li>Profil: kullanıcı adı, görünen ad, ülke, kısa biyografi, profil fotoğrafı.</li><li>Paylaşımlar: fotoğraf, açıklama, marka/model ve isteğe bağlı değer; yorumlar, beğeniler, takip ve kaydetme işlemleri, engellediğiniz üyeler, yaptığınız şikayetler, bildirimler.</li></ul>
+<p>Üyelik başvurusu (yalnızca başvurduysanız)</p>
+<ul><li>Başvuruda belirttiğiniz saatin marka, model ve seri numarası; kamerayla çektiğiniz dört doğrulama fotoğrafı (saat/kutu/sertifika/el yazılı not birlikte, sertifika, bilek, kutu); isteğe bağlı kısa tanıtım, Instagram ve referans bilgisi; KVKK açık rıza kaydınız (tarih ve metin sürümü).</li></ul>
+<p>Satın alma</p>
+<ul><li>Premium abonelik durumunuz. Ödeme bilgileriniz (kart vb.) Apple tarafından işlenir; bize ulaşmaz. Abonelik işlemi, Apple'ın imzalı makbuzu sunucumuzda doğrulanarak yapılır.</li></ul>
+<p>Teknik veriler</p>
+<ul><li>Uygulama sürümü, cihaz modeli ve iOS sürümü, son görülme ve giriş sayısı; internet bağlantısı olup olmadığı.</li><li>Hata günlükleri: hata kodu ve mesajı, oluştuğu zaman, hesap tanımlayıcınız (örn. yapay zekâ ya da arama servisinin hata vermesi, internet olmaması, sonuç çıkmayan arama).</li><li>Çökme raporları ve anonim kullanım istatistikleri (Firebase).</li></ul>
+<p>Toplamadığımız veriler: reklam kimliği (IDFA), kesin konum, rehber, mikrofon. Sizi reklam amacıyla izlemeyiz.</p></div>
+<div class="section"><h2>3. Verileri Hangi Amaçlarla Kullanıyoruz</h2>
+<ul><li>Hesabınızı oluşturmak ve koleksiyonunuzu sunmak, cihazlar arasında senkronize etmek (sözleşmenin ifası).</li><li>Saat tanıma ve piyasa değeri araştırması yapmak; kullanım hakkınızı ve adil kullanım sınırlarını uygulamak.</li><li>Topluluğu işletmek: üyelik başvurusunu incelemek, paylaşımları göstermek, şikayetleri ve kötüye kullanımı denetlemek (meşru menfaat; başvuru fotoğrafları için açık rıza).</li><li>Premium aboneliğinizi doğrulamak ve sunmak.</li><li>Hataları tespit etmek, uygulamanın kararlılığını ve güvenliğini sağlamak, sahtekârlığı önlemek (meşru menfaat).</li><li>Yasal yükümlülüklerimizi yerine getirmek.</li></ul>
+<p>Verilerinizi satmayız ve reklam amacıyla kullanmayız.</p></div>
+<div class="section"><h2>4. Hizmet Sağlayıcılar ve Üçüncü Taraflar</h2>
+<p>Uygulamayı çalıştırmak için aşağıdaki hizmet sağlayıcıları kullanırız. Her biri yalnızca ilgili işlem için gereken veriyi alır:</p>
+<ul><li>Apple: Apple ile Giriş ve abonelik (StoreKit) doğrulaması.</li><li>Supabase: kimlik doğrulama, veritabanı, dosya depolama ve sunucu fonksiyonları (bulut altyapımız). Sunucular AWS Frankfurt (eu-central-1), Almanya'dadır — Avrupa Birliği sınırları içinde barındırılır.</li><li>Anthropic (Claude): Saat tarama özelliğini kullandığınızda çektiğiniz fotoğraf, saati tanımlamak amacıyla Anthropic'in yapay zekâ servisine gönderilir; bizim tarafımızdan bu amaçla saklanmaz.</li><li>SerpAPI: Yazıyla arama ve piyasa değeri araştırmasında arama metniniz (marka/model gibi) bu servise gönderilir.</li><li>Döviz kuru servisi: Kur bilgisi almak için çağrılır; kişisel veri içermez.</li><li>Google Firebase: Çökme raporları ve anonim kullanım istatistikleri.</li></ul>
+<p>Verileriniz Almanya'da (AB) barındırılır; hizmet sağlayıcıların bir kısmı (ör. yapay zekâ, arama ve analitik/çökme servisleri) Türkiye ve AB dışında, ör. ABD'de yer alabilir. Bu nedenle verileriniz yurt dışına aktarılabilir; aktarımı KVKK ve ilgili mevzuatta öngörülen güvencelerle yaparız ve bu servislere yalnızca ilgili işlem için gereken veriyi göndeririz. Koleksiyonunuz ve fotoğraflarınız yapay zekâ / arama servislerine kalıcı olarak saklanmak üzere gönderilmez.</p>
+<p>Verilerinizi, yasal bir zorunluluk (mahkeme kararı vb.) olmadıkça başka üçüncü kişilerle paylaşmayız.</p></div>
+<div class="section"><h2>5. Topluluk: Neler Başkalarına Görünür</h2>
+<ul><li>Onaylı üyeler; kullanıcı adınızı, görünen adınızı, ülkenizi, biyografinizi, profil fotoğrafınızı ve paylaşımlarınızı görebilir.</li><li>Paylaşımda saatin marka ve modeli her zaman görünür; değer bilgisini gizleyebilirsiniz.</li><li>E-posta adresiniz, Apple kimliğiniz, seri numaranız, başvuru fotoğraflarınız ve hata kayıtlarınız diğer üyelere asla gösterilmez.</li><li>Başvuru fotoğraflarınızı ve seri numaranızı yalnızca başvuruyu inceleyen yetkili görür (süreli bağlantılarla ve özel depolamada).</li><li>Topluluk Kurallarına aykırı içerikleri bildirebilir (şikayet), üyeleri engelleyebilirsiniz. Şikayetler tarafımızca incelenir; içerik kaldırılabilir ve hesaplar askıya alınabilir.</li></ul></div>
+<div class="section"><h2>6. Saklama Süreleri</h2>
+<ul><li>Hesap ve koleksiyon verileri: hesabınızı silene kadar.</li><li>Üyelik başvurusu fotoğrafları ve seri numarası metni: başvurunuz onaylanırsa 30 gün, reddedilir veya geri çekilirse 14 gün (geri çekmede fotoğraflar hemen silinir), karar verilmemişse en çok 60 gün sonra kalıcı olarak silinir. Sahte/mükerrer başvuruları önlemek için seri numarasının geri döndürülemez bir özeti, kararın kendisi ve tarihi saklanır.</li><li>Hata günlükleri: teşhis amacıyla en çok 12 ay; hesabınızı sildiğinizde size ait kayıtlar da silinir.</li><li>Topluluk içerikleri: siz silene veya hesabınız silinene kadar.</li><li>Yasal saklama yükümlülüğü gerektiren veriler, bu süre boyunca saklanır.</li></ul></div>
+<div class="section"><h2>7. Güvenlik</h2>
+<ul><li>Veriler aktarım sırasında şifrelenir (TLS) ve sunucuda disk seviyesinde şifreli saklanır; veritabanında kullanıcıya özel erişim kuralları (Row Level Security) uygulanır.</li><li>Başvuru fotoğrafları gibi hassas dosyalar herkese açık olmayan özel alanda tutulur ve yalnızca yetkili tarafından kısa ömürlü bağlantılarla görüntülenir.</li><li>Uygulamada isteğe bağlı Face ID / Touch ID kilidi bulunur.</li></ul>
+<p>Hiçbir sistem mutlak güvenli değildir; bir güvenlik ihlali halinde ilgili mevzuata uygun şekilde bildirim yaparız.</p></div>
+<div class="section"><h2>8. Çocuklar</h2>
+<p>Topluluk özellikleri 18 yaş ve üzeri içindir. 13 yaşından küçüklerden bilerek kişisel veri toplamayız. Bir çocuğa ait veri topladığımızı fark ederseniz <a class="contact-email" href="mailto:destek@zemberek.app">destek@zemberek.app</a> adresine yazın; sileriz.</p></div>
+<div class="section"><h2>9. Haklarınız</h2>
+<p>6698 sayılı KVKK'nın 11. maddesi (ve geçerliyse GDPR) uyarınca:</p>
+<ul><li>Verilerinizin işlenip işlenmediğini öğrenme ve bilgi talep etme,</li><li>Düzeltilmesini veya silinmesini isteme,</li><li>İşlemeye itiraz etme ve açık rızanızı geri alma,</li><li>Verilerinizi aktarıldığı üçüncü kişileri öğrenme,</li><li>Kurula şikâyet hakkına sahipsiniz.</li></ul>
+<p>Başvuru için <a class="contact-email" href="mailto:destek@zemberek.app">destek@zemberek.app</a> adresine yazabilirsiniz; kimliğinizi doğruladıktan sonra en geç 30 gün içinde yanıtlarız.</p></div>
+<div class="section"><h2>10. Hesabınızı ve Verilerinizi Silme</h2>
+<p>Ayarlar &gt; Hesap &gt; Hesabı Sil yolu ile hesabınızı istediğiniz zaman silebilirsiniz. Silme işlemi; koleksiyonunuzu, fotoğraflarınızı ve belgelerinizi, topluluk profilinizi ve içeriklerinizi, üyelik başvuru fotoğraflarınızı, hata kayıtlarınızı ve giriş kayıtlarınızı kalıcı olarak siler ve geri alınamaz. Apple ile Giriş bağlantınız da kaldırılır. Yalnızca üyelik başvurunuzu geri çekmek isterseniz, başvuru sırasında yüklediğiniz fotoğraflar hemen silinir.</p></div>
+<div class="section"><h2>11. Değişiklikler</h2>
+<p>Bu politikayı güncelleyebiliriz. Önemli değişiklikleri uygulama içinde duyururuz; güncel sürümün tarihi bu sayfanın başında yer alır.</p></div>
+<div class="section"><h2>12. İletişim</h2>
+<p>Gizlilik ve kişisel verilerle ilgili her türlü soru, talep ve şikâyet için: <a class="contact-email" href="mailto:destek@zemberek.app">destek@zemberek.app</a></p></div>
+<div class="footer"><p>&copy; 2026 Zemberek. Tüm hakları saklıdır. · <a class="contact-email" href="mailto:destek@zemberek.app">destek@zemberek.app</a></p></div>
+</div></body></html>
