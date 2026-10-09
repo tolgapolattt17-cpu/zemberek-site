@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zemberek - Saatlerinizin Dijital Defteri</title>
+    <meta name="description" content="Zemberek — saat koleksiyonunuzun dijital defteri. Gizlilik Politikası, Kullanım Koşulları, Topluluk Kuralları ve KVKK metinleri.">
+    <meta name="theme-color" content="#0D0D0D">
+    <link rel="canonical" href="https://zemberek.app/">
     <style>
         * {
             margin: 0;
@@ -65,12 +68,31 @@
             color: #D4AF37;
         }
 
+        .link-groups {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .link-group {
+            flex: 1 1 260px;
+            max-width: 300px;
+        }
+
+        .link-group h2 {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #888888;
+            margin-bottom: 14px;
+        }
+
         .links {
             display: flex;
             flex-direction: column;
             gap: 16px;
-            max-width: 300px;
-            margin: 0 auto;
         }
 
         .links a {
@@ -132,15 +154,25 @@
 
         <p class="tagline">Saatlerinizin Dijital Defteri</p>
 
-        <div class="links">
-            <a href="privacy-policy.html">Gizlilik</a>
-            <a href="terms-of-service.html">Koşullar</a>
-            <a href="community-rules.html">Topluluk Kuralları</a>
-            <a href="kvkk-aydinlatma.html">KVKK</a>
-            <a href="privacy-policy-en.html">Privacy (EN)</a>
-            <a href="terms-of-service-en.html">Terms (EN)</a>
-            <a href="community-rules-en.html">Community Rules (EN)</a>
-            <a href="kvkk-notice-en.html">KVKK Notice (EN)</a>
+        <div class="link-groups">
+            <section class="link-group" lang="tr" aria-labelledby="grup-tr">
+                <h2 id="grup-tr">Türkçe</h2>
+                <div class="links">
+                    <a href="privacy-policy.html">Gizlilik Politikası</a>
+                    <a href="terms-of-service.html">Kullanım Koşulları</a>
+                    <a href="community-rules.html">Topluluk Kuralları</a>
+                    <a href="kvkk-aydinlatma.html">KVKK Aydınlatma Metni</a>
+                </div>
+            </section>
+            <section class="link-group" lang="en" aria-labelledby="grup-en">
+                <h2 id="grup-en">English</h2>
+                <div class="links">
+                    <a href="privacy-policy-en.html">Privacy Policy</a>
+                    <a href="terms-of-service-en.html">Terms of Service</a>
+                    <a href="community-rules-en.html">Community Rules</a>
+                    <a href="kvkk-notice-en.html">KVKK Notice</a>
+                </div>
+            </section>
         </div>
 
         <div class="store-badge">
