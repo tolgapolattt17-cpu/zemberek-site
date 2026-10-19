@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zemberek - Saatlerinizin Dijital Defteri</title>
-    <meta name="description" content="Zemberek — saat koleksiyonunuzun dijital defteri. Gizlilik Politikası, Kullanım Koşulları, Topluluk Kuralları ve KVKK metinleri.">
+    <meta name="description" content="Zemberek — saat koleksiyonunuzun dijital defteri: saatinizi tarayın, piyasa değerini görün, koleksiyonunuzu ve günlük takma kayıtlarınızı tutun, koleksiyonerlerle paylaşın. Destek, Gizlilik Politikası, Kullanım Koşulları, Topluluk Kuralları ve KVKK.">
     <meta name="theme-color" content="#0D0D0D">
     <link rel="canonical" href="https://zemberek.app/">
     <style>
@@ -60,6 +60,35 @@
             align-items: center;
             justify-content: center;
             box-shadow: 0 10px 40px rgba(212, 175, 55, 0.2);
+            overflow: hidden;
+        }
+
+        .app-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .features {
+            list-style: none;
+            max-width: 520px;
+            margin: 0 auto 50px;
+            text-align: left;
+            color: #CCCCCC;
+            font-size: 16px;
+        }
+
+        .features li {
+            padding: 8px 0 8px 28px;
+            position: relative;
+        }
+
+        .features li::before {
+            content: '\2022';
+            color: #D4AF37;
+            position: absolute;
+            left: 8px;
         }
 
         .app-icon svg {
@@ -142,11 +171,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="app-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/>
-            </svg>
-        </div>
+        <div class="app-icon"><img src="icon.jpg" alt="Zemberek uygulama simgesi" width="150" height="150"></div>
 
         <div class="logo">
             <h1><span>ZEM</span>BEREK</h1>
@@ -154,10 +179,19 @@
 
         <p class="tagline">Saatlerinizin Dijital Defteri</p>
 
+        <ul class="features">
+            <li>Saatini tara: marka ve modeli tanı, benzer saatlerin piyasa fiyatlarını gör</li>
+            <li>Koleksiyonunun değerini ve geçmişini takip et</li>
+            <li>İstek listeni (Favoriler) koleksiyonuna taşı</li>
+            <li>Bugün hangi saati taktığını kaydet, takvimde izle</li>
+            <li>Davetle girilen koleksiyoner topluluğunda zevkini paylaş</li>
+        </ul>
+
         <div class="link-groups">
             <section class="link-group" lang="tr" aria-labelledby="grup-tr">
                 <h2 id="grup-tr">Türkçe</h2>
                 <div class="links">
+                    <a href="destek.html">Destek ve SSS</a>
                     <a href="privacy-policy.html">Gizlilik Politikası</a>
                     <a href="terms-of-service.html">Kullanım Koşulları</a>
                     <a href="community-rules.html">Topluluk Kuralları</a>
@@ -167,6 +201,7 @@
             <section class="link-group" lang="en" aria-labelledby="grup-en">
                 <h2 id="grup-en">English</h2>
                 <div class="links">
+                    <a href="support-en.html">Support and FAQ</a>
                     <a href="privacy-policy-en.html">Privacy Policy</a>
                     <a href="terms-of-service-en.html">Terms of Service</a>
                     <a href="community-rules-en.html">Community Rules</a>

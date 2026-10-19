@@ -7,6 +7,7 @@
 | Sayfa | Türkçe | English |
 |---|---|---|
 | Ana sayfa | [zemberek.app](https://zemberek.app/) | — |
+| Destek ve SSS | [destek](https://zemberek.app/destek.html) | [support-en](https://zemberek.app/support-en.html) |
 | Gizlilik Politikası | [privacy-policy](https://zemberek.app/privacy-policy.html) | [privacy-policy-en](https://zemberek.app/privacy-policy-en.html) |
 | Kullanım Koşulları | [terms-of-service](https://zemberek.app/terms-of-service.html) | [terms-of-service-en](https://zemberek.app/terms-of-service-en.html) |
 | Topluluk Kuralları | [community-rules](https://zemberek.app/community-rules.html) | [community-rules-en](https://zemberek.app/community-rules-en.html) |
@@ -16,13 +17,13 @@ Destek: destek@zemberek.app
 
 ## Yasal sayfaları güncelleme
 
-Gizlilik, koşullar, topluluk kuralları ve KVKK sayfaları **elle düzenlenmez**: uygulama içindeki metinle birebir aynı kalması için tek kaynaktan üretilir.
+Gizlilik, koşullar, topluluk kuralları, KVKK ve **Destek/SSS** sayfaları **elle düzenlenmez**: uygulama içindeki metinle birebir aynı kalması için tek kaynaktan üretilir.
 
 1. Uygulama deposunda `scripts/legal_content.py` içindeki metni ve `UPDATED` tarihini düzenle.
-2. `python3 scripts/generate_legal.py` çalıştır. Betik hem uygulamadaki `ChronoVault/Models/LegalDocuments.swift`'i hem bu sitenin 8 sayfasını yeniden üretir (varsayılan yol `~/Desktop/zemberek-site`; farklıysa yolu ilk argüman olarak ver).
+2. `python3 scripts/generate_legal.py` çalıştır. Betik uygulamadaki `ChronoVault/Models/LegalDocuments.swift` ve `FAQContent.swift` (Yardım ekranı) dosyalarını ve bu sitenin 10 sayfasını yeniden üretir (varsayılan yol `~/Desktop/zemberek-site`; farklıysa yolu ilk argüman olarak ver).
 3. Bu depoda değişiklikleri commit'le ve `main`'e pushla; GitHub Pages bir dakika içinde yayınlar.
 
-`index.html` yasal metin içermez, elle düzenlenir.
+`index.html` (ana sayfa; `icon.jpg` uygulama simgesi) yasal metin içermez, elle düzenlenir. Uygulama App Store'da yayınlanınca "App Store'da yakında" satırını mağaza rozeti/bağlantısıyla değiştir.
 
 ## Yayın öncesi kontrol
 
